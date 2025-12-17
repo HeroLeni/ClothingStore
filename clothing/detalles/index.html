@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Life Graphic T-shirt - CRUD.STORE</title>
+    <link rel="stylesheet" href="detalles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">CRUD.STORE</div>
+            <nav>
+                <a href="#">Shop ▼</a>
+                <a href="#">On Sale</a>
+                <a href="#">New Arrivals</a>
+                <a href="#">Brands</a>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <span>🔍</span>
+                    <input type="search" placeholder="Search for products...">
+                </div>
+                <button class="icon-btn">🛒</button>
+                <button class="icon-btn">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb container">
+        Home > Shop > Men > T-shirts
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail container">
+        <div class="product-layout">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="thumbnail-column">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=100&h=120&fit=crop" alt="Thumbnail 1" class="thumbnail active">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=100&h=120&fit=crop" alt="Thumbnail 2" class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=100&h=120&fit=crop" alt="Thumbnail 3" class="thumbnail">
+                </div>
+                <div class="main-image">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=700&fit=crop" alt="One Life Graphic T-shirt">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1>One Life Graphic T-shirt</h1>
+                <div class="product-rating">
+                    <div class="stars">★★★★☆</div>
+                    <span class="rating-value">4.5/5</span>
+                </div>
+
+                <div class="product-price">
+                    <span class="current-price">$260</span>
+                    <span class="old-price">$300</span>
+                    <span class="discount-badge">-40%</span>
+                </div>
+
+                <p class="product-description">
+                    This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
+                </p>
+
+                <!-- Color Selection -->
+                <div class="product-option">
+                    <h3>Select Colors</h3>
+                    <div class="color-selector">
+                        <button class="color-option" style="background: #4F5155;" title="Dark Gray"></button>
+                        <button class="color-option" style="background: #314F4A;" title="Dark Green"></button>
+                        <button class="color-option active" style="background: #31344F;" title="Navy Blue"></button>
+                    </div>
+                </div>
+
+                <!-- Size Selection -->
+                <div class="product-option">
+                    <h3>Choose Size</h3>
+                    <div class="size-selector">
+                        <button class="size-option">Small</button>
+                        <button class="size-option">Medium</button>
+                        <button class="size-option active">Large</button>
+                        <button class="size-option">X-Large</button>
+                    </div>
+                </div>
+
+                <!-- Quantity and Add to Cart -->
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="product-tabs container">
+        <div class="tabs-header">
+            <button class="tab-btn" data-tab="details">Product Details</button>
+            <button class="tab-btn active" data-tab="reviews">Rating & Reviews</button>
+            <button class="tab-btn" data-tab="faqs">FAQs</button>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="tab-content active" id="reviews">
+            <div class="reviews-header">
+                <h2>All Reviews <span class="review-count">(451)</span></h2>
+                <div class="reviews-actions">
+                    <button class="filter-btn">⚙️</button>
+                    <select class="sort-select">
+                        <option>Latest</option>
+                        <option>Highest Rating</option>
+                        <option>Lowest Rating</option>
+                    </select>
+                    <button class="write-review-btn">Write a Review</button>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review Card 1 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <h4 class="reviewer-name">Samantha D. <span class="verified">✓</span></h4>
+                    <p class="review-text">
+                        "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+                    </p>
+                    <p class="review-date">Posted on August 14, 2023</p>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★☆</div>
+                    <h4 class="reviewer-name">Alex M. <span class="verified">✓</span></h4>
+                    <p class="review-text">
+                        "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."
+                    </p>
+                    <p class="review-date">Posted on August 15, 2023</p>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★☆☆</div>
+                    <h4 class="reviewer-name">Ethan R. <span class="verified">✓</span></h4>
+                    <p class="review-text">
+                        "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."
+                    </p>
+                    <p class="review-date">Posted on August 16, 2023</p>
+                </div>
+
+                <!-- Review Card 4 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★☆</div>
+                    <h4 class="reviewer-name">Olivia P. <span class="verified">✓</span></h4>
+                    <p class="review-text">
+                        "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."
+                    </p>
+                    <p class="review-date">Posted on August 17, 2023</p>
+                </div>
+
+                <!-- Review Card 5 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★☆</div>
+                    <h4 class="reviewer-name">Liam K. <span class="verified">✓</span></h4>
+                    <p class="review-text">
+                        "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."
+                    </p>
+                    <p class="review-date">Posted on August 18, 2023</p>
+                </div>
+
+                <!-- Review Card 6 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <h4 class="reviewer-name">Ava H. <span class="verified">✓</span></h4>
+                    <p class="review-text">
+                        "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."
+                    </p>
+                    <p class="review-date">Posted on August 19, 2023</p>
+                </div>
+            </div>
+
+            <button class="load-more-btn">Load More Reviews</button>
+        </div>
+
+        <!-- Product Details Tab (Hidden by default) -->
+        <div class="tab-content" id="details">
+            <div class="product-details-content">
+                <h3>Product Information</h3>
+                <ul>
+                    <li><strong>Material:</strong> 100% Cotton</li>
+                    <li><strong>Fit:</strong> Regular Fit</li>
+                    <li><strong>Neck:</strong> Round Neck</li>
+                    <li><strong>Sleeve:</strong> Short Sleeve</li>
+                    <li><strong>Care:</strong> Machine Wash</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- FAQs Tab (Hidden by default) -->
+        <div class="tab-content" id="faqs">
+            <div class="faqs-content">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <h4>What is the return policy?</h4>
+                    <p>You can return items within 30 days of purchase.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does shipping take?</h4>
+                    <p>Standard shipping takes 5-7 business days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="product-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - CRUD.STORE</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">CRUD.STORE</div>
+            <nav>
+                <a href="#">Shop ▼</a>
+                <a href="#">On Sale</a>
+                <a href="#">New Arrivals</a>
+                <a href="#">Brands</a>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <span>🔍</span>
+                    <input type="search" placeholder="Search for products...">
+                </div>
+                <button class="icon-btn">🛒</button>
+                <button class="icon-btn">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb container">
+        Home > Cart
+    </div>
+
+    <!-- Cart Page -->
+    <section class="cart-page container">
+        <h1 class="page-title">Your cart</h1>
+
+        <div class="cart-layout">
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=150&h=150&fit=crop" alt="Gradient Graphic T-shirt">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Gradient Graphic T-shirt</h3>
+                        <p class="item-info">Size: <span>Large</span></p>
+                        <p class="item-info">Color: <span>White</span></p>
+                        <p class="item-price">$145</p>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-btn" title="Remove item">🗑️</button>
+                        <div class="quantity-control">
+                            <button class="qty-btn minus">−</button>
+                            <input type="number" value="1" min="1" class="qty-input" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=150&h=150&fit=crop" alt="Checkered Shirt">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Checkered Shirt</h3>
+                        <p class="item-info">Size: <span>Medium</span></p>
+                        <p class="item-info">Color: <span>Red</span></p>
+                        <p class="item-price">$180</p>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-btn" title="Remove item">🗑️</button>
+                        <div class="quantity-control">
+                            <button class="qty-btn minus">−</button>
+                            <input type="number" value="1" min="1" class="qty-input" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=150&h=150&fit=crop" alt="Skinny Fit Jeans">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Skinny Fit Jeans</h3>
+                        <p class="item-info">Size: <span>Large</span></p>
+                        <p class="item-info">Color: <span>Blue</span></p>
+                        <p class="item-price">$240</p>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-btn" title="Remove item">🗑️</button>
+                        <div class="quantity-control">
+                            <button class="qty-btn minus">−</button>
+                            <input type="number" value="1" min="1" class="qty-input" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span class="value">$565</span>
+                </div>
+
+                <div class="summary-row discount">
+                    <span>Discount (-20%)</span>
+                    <span class="value">-$113</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span class="value">$15</span>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span class="value">$467</span>
+                </div>
+
+                <!-- Promo Code Input -->
+                <div class="promo-code">
+                    <input type="text" placeholder="Add promo code" class="promo-input">
+                    <button class="promo-btn">Apply</button>
+                </div>
+
+                <!-- Checkout Button -->
+                <button class="checkout-btn">Go to Checkout →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container newsletter-wrapper">
+            <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+            <div class="newsletter-form">
+                <div class="input-wrapper">
+                    <span class="input-icon">✉</span>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <button class="subscribe-btn">Subscribe to Newsletter</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column brand-column">
+                    <h3 class="footer-logo">CRUD.STORE</h3>
+                    <p>We have clothes that suits your style and which you're proud to wear. From women to men.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">𝕏</a>
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">⚪</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>COMPANY</h4>
+                    <a href="#">About</a>
+                    <a href="#">Features</a>
+                    <a href="#">Works</a>
+                    <a href="#">Career</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>HELP</h4>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Delivery Details</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>FAQ</h4>
+                    <a href="#">Account</a>
+                    <a href="#">Manage Deliveries</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Payments</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>RESOURCES</h4>
+                    <a href="#">Free eBooks</a>
+                    <a href="#">Development Tutorial</a>
+                    <a href="#">How to - Blog</a>
+                    <a href="#">Youtube Playlist</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Crudzaso.com © 2025, All Rights Reserved</p>
+                <div class="payment-methods">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="Google Pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart-script.js"></script>
+</body>
+</html>
